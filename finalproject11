@@ -1,0 +1,494 @@
+#include <stdio.h>
+#include <stdlib.h>
+/* Fevzi Furkan Sevinc 18010011022 */
+
+int a,b,c,d,e,f,g,h,i,j,k,km,y,z,gidileceky,cikilacaky,jh,x,m,asdf,xc,az,ucretdongu,aqw,uucret,wert,trew,yujh,hjuy,ucret,yy,duurak,buyukcekmece,basaksehir,kucukcekmece,fatih,besiktas,beyoglu,silivri,zeytinburnu,rt,onay,cikis;
+char adresdetay[100][100];
+void adresdetayvegidilecekyer(){
+printf("\t\t\t\t\tAdresinizin detayini giriniz(sokak,mahalle vb.)\n");
+    gets(adresdetay[0]);
+    for(y=1;y>0;y++){
+        rotamenusu();
+        scanf("%d", &f);
+        for(z=1;z>0;z++){
+            if(f==1){
+                avrupamenu();
+                scanf("%d", &hjuy);
+                printf("Ucret %d tl'dir", &ucret);
+                printf("Aracin plakası %d dir", &m);
+                printf("Soforun ismi %s dir");
+                printf("Onaylamak icin evet(1) ye");
+                printf("Vazgecmek için hayir(2) ye basiniz.");
+                scanf("%d", &jh);
+                if(jh==1){
+                    printf("Araciniz yola cikmistir");
+                }else if(jh==2){
+                    printf("İslemden Vazgecilmistir");
+                }else{
+                    printf("Yanlis giris yaptiniz.");
+                }
+            }else if(f==2){
+                asyamenu();
+                scanf("%d", &hjuy);
+                printf("Ucret %d tl'dir\n", ucret);
+                printf("Aracin plakasi %d dir\n", &m);
+                printf("Soforun ismi %s dir\n", &xc);
+                printf("Onaylamak icin evet(e) ye\n");
+                printf("Vazgecmek icin hayir(h) ye basiniz.\n");
+                scanf("%s", &jh);
+                if(jh==e){
+                    printf("\t\t\t\t\tAraciniz yola cikmistir");
+                }else if(jh==h){
+                    printf("\t\t\t\t\tİslemden Vazgecilnistir");
+                }else{
+                    printf("\t\t\t\t\tYanlis giris yaptiniz.");
+                }
+            }else{
+                printf("\t\t\t\t\tYanlis giris yaptiniz");
+                rotamenusu();
+                scanf("%d", &f);
+            }
+        }
+    }
+    }
+void sonuctablosu(){
+    printf("\t\t\t\t\tucret:%d tl\n", ucret);
+    if(yujh==1 || 2){
+        duurak=silivri;
+    }else if(yujh==3 || 4){
+        duurak=buyukcekmece;
+
+    }else if(yujh==5 || 6){
+        duurak=basaksehir;
+
+    }else if(yujh==7 || 8){
+        duurak=kucukcekmece;
+
+    }else if(yujh==9 || 10 || 11 || 12 || 17){
+        duurak=zeytinburnu;
+
+    }else if(yujh==13){
+        duurak=fatih;
+
+    }else if(yujh==14){
+        duurak=beyoglu;
+
+    }else if(yujh==15 || 16){
+        duurak=besiktas;
+
+    }
+
+    printf("\t\t\t\t\tTaksiyi istiyorsaniz(1)'e\n");
+    printf("\t\t\t\t\tistemiyorsaniz (2)'ye basiniz\n");
+    scanf("%d", &onay);
+    if(onay==1){
+        printf("\t\t\t\t\tTaksiniz yola cikmistir\n");
+        printf("\t\t\t\t\tKonumunuza en yakin duraktan ilk siradaki sofor gonderilecektir\n");
+        printf("\t\t\t\t\tdurak ve sofor profillerini ana menuden inceleyebilirsiniz\n");
+        printf("\t\t\t\t\tcikis icin bir sayiya basiniz\n");
+        scanf("%d", &cikis);
+
+    }else if(onay==2){
+        printf("\t\t\t\t\tisleminiz iptal edilmistir\n");
+        printf("\t\t\t\t\tcikis icin bir sayiya basiniz\n");
+        scanf("%d", &cikis);
+
+    }
+
+
+
+    }
+void kucukcekmecedurak1(){
+    printf("\t\t\t\t\t Arslan taksi\n");
+    printf("\t\t\t\t\tSofor ismi     | Plakasi  | Deneyim\n");
+    printf("\t\t\t\t\tHuseyin gur    |34 TJD 87 | 3 YIL\n");
+    printf("\t\t\t\t\tYusuf Ahmedoglu|34 THK 56 | 1 YIL\n");
+    printf("\t\t\t\t\tMetehan Demir  |34 TYH 99 | 6 YIL\n");
+
+}
+
+void kucukcekmecedurak2(){
+    printf("\t\t\t\t\t Tekin taksi\n");
+    printf("\t\t\t\t\tSofor ismi     | Plakasi  | Deneyim\n");
+    printf("\t\t\t\t\tSavas Uzun     |34 TKD 17 | 2 YIL\n");
+    printf("\t\t\t\t\tBerke Balci    |34 TLK 22 | 8 YIL\n");
+    printf("\t\t\t\t\tEnes Bayiz     |34 TOB 99 | 4 YIL\n");
+
+}
+void basaksehirdurak(){
+    printf("\t\t\t\t\t Nazar taksi\n");
+    printf("\t\t\t\t\tSofor ismi     | Plakasi  | Deneyim\n");
+    printf("\t\t\t\t\tUgur Yildiz    |34 TKL 85 | 2 YIL\n");
+    printf("\t\t\t\t\tMurat Aslan    |34 TLK 58 | 10 YIL\n");
+    printf("\t\t\t\t\tFatih Yilmaz   |34 TUH 12 | 3 YIL\n");
+
+}
+void besiktasdurak(){
+    printf("\t\t\t\t\t Ozturk taksi\n");
+    printf("\t\t\t\t\tSofor ismi     | Plakasi  | Deneyim\n");
+    printf("\t\t\t\t\tKoray Ozdemir  |34 TKH 13 | 1 YIL\n");
+    printf("\t\t\t\t\tIsmet Topcu    |34 TAK 45 | 1 YIL\n");
+    printf("\t\t\t\t\tBatuhan Kayar  |34 TKJ 67 | 6 YIL\n");
+
+}
+void beyogludurak(){
+    printf("\t\t\t\t\t Asmalimescid taksi\n");
+    printf("\t\t\t\t\tSofor ismi     | Plakasi  | Deneyim\n");
+    printf("\t\t\t\t\tAlper Sapcili  |34 TLK 96 | 3 YIL\n");
+    printf("\t\t\t\t\tBatuhan Yuceur |34 TKG 32 | 7 YIL\n");
+    printf("\t\t\t\t\tFurkan Demir   |34 TYK 78 | 2 YIL\n");
+
+}
+void fatihdurak(){
+    printf("\t\t\t\t\tSur taksi\n");
+    printf("\t\t\t\t\tSofor ismi     | Plakasi  | Deneyim\n");
+    printf("\t\t\t\t\tFurkan Sevinc  |34 TLD 95 | 2 YIL\n");
+    printf("\t\t\t\t\tMustafa Karaca |34 THK 23 | 9 YIL\n");
+    printf("\t\t\t\t\tAbdullah Kara  |34 TYJ 76 | 5 YIL\n");
+
+}
+void zburnudurak(){
+    printf("\t\t\t\t\t Zeytin taksi\n");
+    printf("\t\t\t\t\tSofor ismi     | Plakasi  | Deneyim\n");
+    printf("\t\t\t\t\tHuseyin Yigit  |34 TKL 50 | 25 YIL\n");
+    printf("\t\t\t\t\tİsa Kaplan     |34 TOD 67 | 2 YIL\n");
+    printf("\t\t\t\t\tEmre Ozdemir   |34 TLA 41 | 6 YIL\n");
+
+}
+void silivridurak(){
+    printf("\t\t\t\t\t Semizkum taksi\n");
+    printf("\t\t\t\t\tSofor ismi     | Plakasi  | Deneyim\n");
+    printf("\t\t\t\t\tDogukan Akkay  |34 TUG 26 | 9 YIL\n");
+    printf("\t\t\t\t\tSelim Kayar    |34 TAB 71 | 2 YIL\n");
+    printf("\t\t\t\t\tOsman Temiz    |34 TYH 85 | 4 YIL\n");
+
+}
+void buyukcekmecedurak(){
+    printf("\t\t\t\t\t Marmara taksi\n");
+    printf("\t\t\t\t\tSofor ismi     | Plakasi  | Deneyim\n");
+    printf("\t\t\t\t\tSadi Tekin     |34 TPJ 25 | 5 YIL\n");
+    printf("\t\t\t\t\tSemih Kaya     |34 TLS 81 | 6 YIL\n");
+    printf("\t\t\t\t\tTarik Titiz    |34 TSD 23 | 1 YIL\n");
+
+}
+void kartaldurak(){
+    printf("\t\t\t\t\t Anadolu taksi\n");
+    printf("\t\t\t\t\tSofor ismi     | Plakasi  | Deneyim\n");
+    printf("\t\t\t\t\tBerkay Mulaoglu|34 TPU 32 | 12 YIL\n");
+    printf("\t\t\t\t\tOmer Tetikoglu |34 TLA 64 | 2 YIL\n");
+    printf("\t\t\t\t\tAbdullah Topal |34 TUY 91 | 3 YIL\n");
+
+
+}
+void kadikoydurak(){
+    printf("\t\t\t\t\t Kadikoy taksi\n");
+    printf("\t\t\t\t\tSofor ismi     | Plakasi  | Deneyim\n");
+    printf("\t\t\t\t\tMurat Keskin   |34 TYG 51 | 1 YIL\n");
+    printf("\t\t\t\t\tYusuf Ahmedoglu|34 TPH 29 | 10 YIL\n");
+    printf("\t\t\t\t\tMetehan Demir  |34 TTG 80 | 3 YIL\n");
+
+}
+void pendikdurak(){
+    printf("\t\t\t\t\t Lale taksi\n");
+    printf("\t\t\t\t\tSofor ismi     | Plakasi  | Deneyim\n");
+    printf("\t\t\t\t\tHabib Kurt     |34 TJD 87 | 4 YIL\n");
+    printf("\t\t\t\t\tAhmet Aslan    |34 TUA 19 | 2 YIL\n");
+    printf("\t\t\t\t\tKalender Tok   |34 TKL 66 | 9 YIL\n");
+
+}
+char butunilceler[50][30] = {{"Bagcilar"}};
+
+char avrupailce[50][30] =   {{"Bagcılar"},{"Bahcelievler"},{"Bakırkoy"},{"Basaksehir"},{"Bayrampasa"},{"Besiktas"},
+                            {"Beylikduzu"},{"Buyukcekmece"},{"Beyoglu"},{"Catalca"},{"Esenyurt"},{"Eyup"},
+                            {"Fatih"},{"Gaziosmanpasa"},{"Kucukcekmece"},{"Silivri"},{"Zeytinburnu"},
+                            {"Sariyer"},{"Sisli"},{"Kagıthane"},{"Arnavutkoy"},{"Avcilar"}};
+char asyailce[50][30] =     {{"Tuzla"},{"Kartal"},{"Beykoz"},{"Kadikoy"},
+                            {"Maltepe"},{"Pendik"},{"Sancaktepe"},{"Sultanbeyli"},{"Sile"},{"Uskudar"}};
+void yakamenusu()
+{
+
+        printf("\t\t\t\t\tNot: eger yaka degistirirseniz\n");
+        printf("\t\t\t\t\t10 tl kopru ucreti alinacaktir\n");
+        printf("\t\t\t\t\t1 | Avrupa yakasi\n");
+        printf("\t\t\t\t\t2 | Anadolu yakasi\n");
+}
+void rotamenusu()
+{
+        printf("\t\t\t\t\tgideceğiniz Yakayi Seciniz\n");
+        printf("\t\t\t\t\tNot: eger yaka degistirirseniz\n");
+        printf("\t\t\t\t\t10 tl kopru ucreti alinacaktir\n");
+        printf("\t\t\t\t\t1 | Avrupa yakasi\n");
+        printf("\t\t\t\t\t2 | Anadolu yakasi\n");
+}
+
+void menuyedon()
+{
+
+    printf("\t\t\t\t\t*****---------------------------*****\n");
+    printf("\t\t\t\t\t***-------------------------------***\n");
+    printf("\t\t\t\t\t*-----------------------------------*\n");
+    printf("\t\t\t\t\t----------Rumeli Taksi'ye------------\n");
+    printf("\t\t\t\t\t------------Hosgeldiniz--------------\n");
+    printf("\t\t\t\t\t-------------------------------------\n");
+    printf("\t\t\t\t\t--- 1| Taksi Cagir             ------\n");
+    printf("\t\t\t\t\t--- 2| Durak ve sofor profili  ------\n");
+    printf("\t\t\t\t\t----   goruntuleme             ------\n");
+    printf("\t\t\t\t\t--- 3| Ucret Tarifesi ve ucret ------\n");
+    printf("\t\t\t\t\t----   Hesaplama               ------\n");
+    printf("\t\t\t\t\t--- 4| Cikis                   ------\n");
+    printf("\t\t\t\t\t*-----------------------------------*\n");
+    printf("\t\t\t\t\t***-------------------------------***\n");
+    printf("\t\t\t\t\t*****---------------------------*****\n");
+
+}
+    void avrupamenu()
+    {
+        printf("\t\t\t\t\t 1-Silivri\n");
+        printf("\t\t\t\t\t 2-Catalca\n");
+        printf("\t\t\t\t\t 3-Buyukcekmece\n");
+        printf("\t\t\t\t\t 4-Beylikduzu\n");
+        printf("\t\t\t\t\t 5-Esenyurt\n");
+        printf("\t\t\t\t\t 6-Basaksehir\n");
+        printf("\t\t\t\t\t 7-Kucukcekmece\n");
+        printf("\t\t\t\t\t 8-Bahcelievler\n");
+        printf("\t\t\t\t\t 9-Gaziosmanpasa\n");
+        printf("\t\t\t\t\t10-Bakirkoy\n");
+        printf("\t\t\t\t\t11-Bayrampasa\n");
+        printf("\t\t\t\t\t12-Zeytinburnu\n");
+        printf("\t\t\t\t\t13-Fatih\n");
+        printf("\t\t\t\t\t14-Beyoglu\n");
+        printf("\t\t\t\t\t15-Besiktas\n");
+        printf("\t\t\t\t\t16-Bagcilar\n");
+        printf("\t\t\t\t\t17-Eyup\n");
+
+
+
+
+    }
+
+    void asyamenu()
+    {
+        printf("\t\t\t\t\t18-Kadikoy\n");
+        printf("\t\t\t\t\t19-Beykoz\n");
+        printf("\t\t\t\t\t20-Kartal\n");
+        printf("\t\t\t\t\t21-Tuzla\n");
+        printf("\t\t\t\t\t22-Uskudar\n");
+        printf("\t\t\t\t\t23-Pendik\n");
+        printf("\t\t\t\t\t24-Sile\n");
+        printf("\t\t\t\t\t25-Maltepe\n");
+
+    }
+
+int main()
+{
+for(i=1;i>0;i++){
+
+        menuyedon();
+    scanf("%d", &a);
+    for(j=1;j>0;i++){
+            if (a==1){
+
+        for(ucretdongu=1; ucretdongu>0; ucretdongu++){
+        printf("\t\t\t\t\t------------------------------------------------------------------\n");
+        printf("\t\t\t\t\t-- Adresinize taksi cagirmak icin  (1)'ye basiniz               --\n");
+        printf("\t\t\t\t\t-- Cikis icin (2)'e basiniz                                     --\n");
+        printf("\t\t\t\t\t------------------------------------------------------------------\n");
+        scanf("\t\t\t\t\t%d", &az);
+        if(az==1){
+            printf("\t\t\t\t\tbulundugunuz yakayi seciniz.\n");
+            yakamenusu();
+            scanf("%d", &wert);
+            if(wert==1){
+                printf("\t\t\t\t\tbulundugunuz ilceyi seciniz.\n");
+                avrupamenu();
+                scanf("%d", &yujh);
+            }else{
+                printf("\t\t\t\t\tbulundugunuz ilceyi seciniz.\n");
+                asyamenu();
+                scanf("%d", &yujh);
+            }
+
+            printf("\t\t\t\t\tgideceginiz yakayi seciniz.\n");
+            yakamenusu();
+            scanf("%d", &trew);
+            if(trew==1){
+            printf("\t\t\t\t\tgideceginiz ilceyi seciniz.\n");
+            avrupamenu();
+            scanf("%d", &hjuy);
+
+            }else{
+            printf("\t\t\t\t\tgideceginiz ilceyi seciniz.\n");
+            asyamenu();
+            scanf("%d", &hjuy);
+            }
+            if(yujh>hjuy){
+                ucret=((yujh-hjuy)*7)+k+4;
+                printf("\t\t\t\t\tucret:%d tl\n", ucret);
+                sonuctablosu();
+                printf("\t\t\t\t\tCikis icin herhangi tusa basiniz");
+                scanf("%d", &yy);
+                break;
+
+            }else if(hjuy>yujh){
+                ucret=((hjuy-yujh)*7)+k+4;
+                printf("\t\t\t\t\tucret:%d tl\n", ucret);
+                sonuctablosu();
+                printf("\t\t\t\t\tCikis icin herhangi tusa basiniz");
+                scanf("%d", &yy);
+
+            }
+            break;
+
+
+        }else if(az==2){
+            break;
+
+        }else{
+            printf("\t\t\t\t\tYanlis giris yaptiniz");
+          break;
+        }
+
+
+        }
+
+
+
+    }else if(a==2){
+
+        printf("\t\t\t\t\t---------------------------------------------------\n");
+        printf("\t\t\t\t\tMevcut taksi duragi olan ilcelerimiz\n");
+        printf("\t\t\t\t\t---------------------------------------------------\n");
+        printf("\t\t\t\t\t   Avrupa yakasi\n");
+        printf("\t\t\t\t\t 1 | Kucukcekmece (2 aktif durak)\n");
+        printf("\t\t\t\t\t 2 | Basaksehir (1 aktif durak)\n");
+        printf("\t\t\t\t\t 3 | Besiktas (1 Aktif durak)\n");
+        printf("\t\t\t\t\t 4 | Beyoglu (1 Aktif durak)\n");
+        printf("\t\t\t\t\t 5 | Fatih (1 Aktif durak)\n");
+        printf("\t\t\t\t\t 6 | Buyukcekmece (1 Akitf durak)\n");
+        printf("\t\t\t\t\t 7 | Silivri (1 Akitf durak)\n");
+        printf("\t\t\t\t\t 8 | Zeytinburnu (1 Aktif durak)\n");
+        printf("\t\t\t\t\t---------------------------------------------------\n");
+        printf("\t\t\t\t\t  Anadolu yakasi\n");
+        printf("\t\t\t\t\t---------------------------------------------------\n");
+        printf("\t\t\t\t\t 9 | Kartal (1 aktif durak)\n");
+        printf("\t\t\t\t\t10 | Kadikoy (2 aktif durak)\n");
+        printf("\t\t\t\t\t11 | Pendik (1 Aktif durak)\n");
+        scanf("\t\t\t\t\t%d", &asdf);
+        if(asdf==1){
+            kucukcekmecedurak1();
+            kucukcekmecedurak2();
+        }else if(asdf==2){
+            basaksehirdurak();
+        }else if(asdf==3){
+            besiktasdurak();
+        }else if(asdf==4){
+            beyogludurak();
+        }else if(asdf==5){
+            fatihdurak();
+        }else if(asdf==6){
+            buyukcekmecedurak();
+        }else if(asdf==7){
+            silivridurak();
+        }else if(asdf==8){
+            zburnudurak();
+        }else if(asdf==9){
+            kartaldurak();
+        }else if(asdf==10){
+            kadikoydurak();
+        }else if(asdf==11){
+            pendikdurak();
+        }else{
+            printf("\t\t\t\t\tYanlis giris yaptiniz");
+        }
+        printf("\t\t\t\t\tCikis icin herhangi tusa basiniz");
+        scanf("%d", &aqw);
+        if(aqw==0){
+            break;
+        }else{
+        break;
+        }
+
+
+    }else if(a==3){
+        for(ucretdongu=1; ucretdongu>0; ucretdongu++){
+        printf("\t\t\t\t\t------------------------------------------------------------------\n");
+        printf("\t\t\t\t\t-- Ucret tarifemiz su sekildedir:                               --\n");
+        printf("\t\t\t\t\t-- Taksimetremizin acilis ucreti 4 tl olup;                     --\n");
+        printf("\t\t\t\t\t-- Her kilometre basina 1 tl eklenecektir                       --\n");
+        printf("\t\t\t\t\t-- Kilometre olarak iki ilce arasindaki hazir kilometre         --\n");
+        printf("\t\t\t\t\t-- Tablosundan yararlanilip, ayni zamanda gideceginiz ilcede    --\n");
+        printf("\t\t\t\t\t-- gidilen ekstra km icin ucret talep edilmeyecektir.           --\n");
+        printf("\t\t\t\t\t-- ornegin; Taksim-Kucukcekmece arasi 30 tl ise                 --\n");
+        printf("\t\t\t\t\t-- Kucukcekmecenin neresine giderseniz gidin 30 tl odeyeceksiniz--\n");
+        printf("\t\t\t\t\t------------------------------------------------------------------\n");
+        printf("\t\t\t\t\t-- Herhangi olasi rotayi hesaplamak icin (1)'ye basiniz         --\n");
+        printf("\t\t\t\t\t-- Anamenuye donmek icin (2)'e basiniz                          --\n");
+        printf("\t\t\t\t\t------------------------------------------------------------------\n");
+        scanf("\t\t\t\t\t%d", &az);
+        if(az==2){
+            break;
+        }else if(az==1){
+            printf("\t\t\t\t\tbulundugunuz yakayi seciniz.\n");
+            yakamenusu();
+            scanf("%d", &wert);
+            if(wert==1){
+                printf("\t\t\t\t\tbulundugunuz ilceyi seciniz.\n");
+                avrupamenu();
+                scanf("%d", &yujh);
+            }else{
+                printf("\t\t\t\t\tbulundugunuz ilceyi seciniz.\n");
+                asyamenu();
+                scanf("%d", &yujh);
+            }
+
+            printf("\t\t\t\t\tgideceginiz yakayi seciniz.\n");
+            yakamenusu();
+            scanf("%d", &trew);
+            if(trew==1){
+            printf("\t\t\t\t\tgideceginiz ilceyi seciniz.\n");
+            avrupamenu();
+            scanf("%d", &hjuy);
+
+            }else{
+            printf("\t\t\t\t\tgideceginiz ilceyi seciniz.\n");
+            asyamenu();
+            scanf("%d", &hjuy);
+            }
+            if(yujh>hjuy){
+                ucret=((yujh-hjuy)*7)+k;
+                printf("\t\t\t\t\tucret:%d tl\n", ucret);
+                printf("\t\t\t\t\tCikis icin herhangi tusa basiniz");
+                scanf("%d", &yy);
+                break;
+
+            }else if(hjuy>yujh){
+                ucret=((hjuy-yujh)*7)+k;
+                printf("ucret:%d tl\n", ucret);
+                printf("\t\t\t\t\tCikis icin herhangi tusa basiniz");
+                scanf("%d", &yy);
+
+            }
+
+
+        }else{
+            printf("\t\t\t\t\tYanlis giris yaptiniz");
+          break;
+        }
+
+
+        }
+
+    }if(a==4){
+    break;
+    }else{
+    }break;
+    }break;
+
+    if(b==f){
+        k=0;
+    }else{
+        k=10;
+    }
+}
+    return 0;
+}
